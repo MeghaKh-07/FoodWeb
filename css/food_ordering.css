@@ -1,0 +1,298 @@
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.primary{
+    text-align: center;
+    font-size: 4rem;
+}
+p{
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+
+#home{
+    background: url("https://cdn.pixabay.com/photo/2014/06/16/23/10/spices-370114_1280.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    position: absolute;
+    top:0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: -2;
+}
+.overlay{
+    position: absolute;
+    background: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.7;
+}
+#navbar{
+    position: sticky;
+    border-bottom: 1px solid #8581814f;
+    background: black;
+    display: grid;
+    top: 0px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    grid-template-columns:1.5fr 3fr 1fr;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo img{
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+#logo h3{ 
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhai', cursive;
+    padding: 1rem 0rem;
+}
+#navbar ul li{ 
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 22px;
+    font-size: 1.3rem;
+}
+#navbar ul li a:hover{
+    border-radius: 2rem;
+    background-color: white;
+    color: black;
+}
+#navbar .order{
+    height: 3rem;
+    width: 9rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+#navbar .order:hover{
+    background: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.mid{
+    font-family: 'Urbanist', sans-serif;
+    color: #777471;
+    margin-top:10rem ;  
+    text-align: center;
+    font-size:2.5rem; 
+}
+
+#column{
+    border-top: 1px solid #8581814f;
+    color: white;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem ;
+}
+#column .col img{
+    display: block;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    margin: auto;
+}
+#column .col h3{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+#column .col p{ 
+    text-align: center;
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+    margin: 0rem 1rem;
+}
+
+#service{
+    margin-top: 4rem;
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+}
+#container{
+    background-color: #abb0b321;
+    height: 100%;
+    margin-top: 8rem;
+}
+#container .heading{
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: Corinthia, cursive;
+    font-style: italic;
+    font-size: 9rem;
+    color: rgb(112, 83, 73);
+    z-index: -1;
+}
+#container .sub-heading{
+    padding-top: 7rem;
+}
+#service-box{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#service-box .item{
+    margin-bottom: 5rem;
+}
+#service-box .item img{
+    display: block;
+    height: 5rem;
+    width: 5rem;
+    margin: auto;
+}
+#service-box .item h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+#service-box .item p{
+    text-align: center;
+    padding: 0rem 2rem ;  
+    color: #0f01018a; 
+}
+
+#about{
+    border-top: 2px  solid white;
+    width: 100%;
+    height: 100%;
+}
+#about h1{
+    margin-top: 5rem;
+    padding: 2rem;
+}
+#about .para{
+    padding: 0rem 8rem;    
+}
+#boxes{
+    display: flex;
+    height: 100%;
+    margin-top: 9rem;
+}
+#boxes .box-1{
+    height: 19rem;
+    margin-top: 4rem;
+    background-color: #c49b63;
+}
+#boxes .box-2{
+    background: #b7843d;
+    height: 23rem;
+}
+#boxes .box-same{
+    height: 20rem;
+    margin-top: 3rem;
+    background-color: #c49b63;
+}
+#boxes .box-4{
+    height: 19rem;
+    margin-top: 4rem;
+    background: #b7843d;
+}
+#boxes .box p{
+    padding: 2rem;
+    text-align: left;
+}
+
+#contact{
+    background: #000000f5;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.contact-form{
+    padding: 2rem 0rem;
+    background: black;
+    height: 100%;
+}
+#contact-details h3{
+    text-align: center; 
+    padding: 2rem;
+    font-size: 1.75rem;
+}
+#contact-details p{
+    padding-left: 3rem;
+    padding-right: 2rem;
+    text-align: left;
+}
+#contact-box .row{
+    display: flex;
+    flex-flow: row wrap;
+}
+.form-grp{
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+.form-grp .form-control{
+    color: white;
+    height: 3rem;
+    width: 15rem;
+    border: transparent;
+    border-bottom: 1px solid rgb(255 255 255 / 50%);
+    background: transparent
+}
+.form-grp ::placeholder{
+    color: rgba(255, 255, 255, 0.733);
+}
+.form-grp .info{
+    width: 33rem;
+}
+.btn{
+    width: 12rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.btn:hover{
+    background: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+footer{
+    height: 100%;
+    padding: 3rem 2rem;
+    background: black;
+    color: white;
+}

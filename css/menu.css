@@ -1,0 +1,341 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+#back{
+    position: absolute;
+    background: black;
+    left: 0;
+    top: 0;
+    right: 0;
+    width:100%;
+    z-index: -1;
+    opacity: 0.96;
+}
+
+#nav-navbar {
+    position: sticky;
+    border-bottom: 1px solid #8581814f;
+    background: black;
+    display: grid;
+    top: 0px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    grid-template-columns:1.5fr 2fr 1.5fr;
+}
+
+#nav-logo { 
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-logo img{
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+#nav-logo h3{ 
+    color: white;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+#nav-navbar ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhai', cursive;
+}
+#nav-navbar ul li {
+    list-style: none;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+#nav-navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem 0.5rem;
+}
+#nav-navbar ul li a:hover {
+    border-radius: 2rem;
+    background-color: white;
+    color: black;
+}
+.btn-xl{
+    background: white;
+    margin:auto;
+    height: 3rem;
+    width: 9rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.btn-xl:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+#menu{
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+.menu-column{
+    background: black;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-gap: 1rem;
+}
+.section {
+    color: white;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 2rem;
+}
+.rows {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+}
+.row-col{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+.row-col img {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+}
+.row-col div{
+    font-size: 1.2rem;
+}    
+
+footer{
+    padding: 2rem;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+}
+@media (max-width:2560px) and (min-width:1441px){
+    #nav-logo img{
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    #nav-logo h3{
+        font-size: 4rem;
+    }
+    #nav-navbar ul li {
+       font-size: 2.5rem;
+    }
+    .btn-xl{
+        height: 4.5rem;
+        width: 13rem;
+        font-size: 2rem;
+    }
+    #menu{
+        margin: 10rem;
+        grid-gap: 3rem;
+    }
+    .section {
+        font-size: 3rem;
+    }
+    .row-col img {
+        height: 5rem;
+        width: 5rem;
+    }
+    .row-col div{
+        font-size: 2rem;
+    }   
+    footer{
+        font-size: 2rem;
+    } 
+}
+
+@media (max-width:1024px) {
+    #nav-logo img{
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    #nav-logo h3{
+        font-size: 1.8rem;
+    }
+    #menu{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .section {
+        font-size: 1.8rem;
+    } 
+    .row-col img {
+        height: 3.3rem;
+        width: 3.3rem;
+    }
+}
+@media(max-width:768px){
+    #nav-logo img{
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    #nav-logo h3{
+        font-size: 1.6rem;
+    }
+    #menu{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 2.5rem;
+    }
+}
+@media(max-width:426px){
+    #nav-navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #nav-logo img{
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    #nav-logo h3{ 
+        padding-left: 0.5rem;
+    }
+    .unseen{
+        display: none;
+    }
+    .btn-xl{
+        height: 2.5rem;
+        width: 7rem;
+    }
+    #menu{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .section {
+        font-size: 1.6rem;
+    } 
+    .row-col img {
+        height: 2.8rem;
+        width: 2.8rem;
+    }
+}
+@media(max-width:376px){
+    #nav-logo img{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    #menu{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .row-col img {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+@media(max-width:320px){
+    #nav-logo img{
+        width: 2rem;
+        height: 2rem;
+    }
+    #nav-logo h3{
+        font-size: 1.4em;
+    }
+    #menu{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .section {
+        font-size: 1.5rem;
+    } 
+    .row-col img {
+        height: 2rem;
+        width: 2rem;
+    }
+    .btn-xl{
+        height: 2rem;
+        width: 6rem;
+    }
+}
+/* @media(max-width: 319px){
+    *{
+        font-weight: 200;
+    }
+    #nav-navbar{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    #menu{
+        margin: 5rem 0rem;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    }
+    .section {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .row-col{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .row-col img {
+        height: 2rem;
+        width: 2rem;
+        margin: auto;
+    }
+    .row-col div{
+        font-size: 1rem;
+        font-weight: 200;
+    }      
+} */
+/* @media (max-width:150px) {
+    #nav-logo{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    #nav-logo h3{
+        text-align: center;
+    }
+    .btn-xl{
+        height: 3rem;
+        width: 5rem;
+    }
+    #menu{
+        margin-top: 3rem;
+    }
+    .menu-column{
+        width: 90px;
+        grid-template-rows: 0.5fr 5fr;
+    }
+    .section{
+        font-size: 1rem;
+    }
+    .row-col{
+        grid-template-columns: 1fr;
+    }
+    .row-col div{
+        text-align: center;
+    }
+    footer{
+        padding: 2rem 0rem;
+    }
+} */
+/* @media (max-width:90px) {
+    *{
+        font-size: 0.5rem;
+    }
+    .menu-column{
+        width: 50px;
+    }
+    
+} */

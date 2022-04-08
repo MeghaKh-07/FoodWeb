@@ -1,0 +1,352 @@
+@media (max-width:2560px) and (min-width:1441px){
+    #logo img{
+        width: 5rem;
+        height: 5rem;
+    }
+    #logo h3{ 
+        font-size: 3.2rem;
+    }
+    #navbar{
+        padding:1rem 0rem;
+    }
+    #navbar ul li a{
+        font-size: 2rem;
+    }
+    #navbar .order{
+        height: 4rem;
+        width: 12rem;
+        font-size: 1.5rem;
+    }
+    .mid{
+        margin-top:20rem ;  
+        font-size: 4rem
+    }
+    #column{
+        margin-top: 20rem;
+        padding-top: 2rem ;
+    }
+    #column .col img{
+        height: 10rem;
+        width: 10rem;
+    }
+    #column .col h3{
+        font-size: 2.5rem;
+    }
+    #column .col p{ 
+       font-size: 1.5rem;
+       padding: 0rem 2rem;
+    }
+    #service{
+        border: 2px solid white;
+        margin-top: 10rem;
+    }
+    #container{
+        margin-top: 15rem;
+        padding-top: 2rem;
+        padding-bottom: 15rem;
+    }
+    #container .heading{
+        font-size: 13rem;
+    }
+    #container .sub-heading{
+        padding-top: 8rem;
+        font-size: 6rem;
+    }
+    #service-box{
+        margin-top: 10rem;
+    }
+    #service-box .item img{
+        height: 8rem;
+        width: 8rem;
+    }
+    #service-box .item h2{
+        font-size: 4rem;
+    }
+    #service-box .item p{
+        font-size: 1.5rem;
+        padding: 0rem 4rem ;  
+    }
+    #about{
+        border-top: 2px  solid white;
+        width: 100%;
+        height: 100%;
+    }
+    #about h1{
+        margin-top: 10rem;
+        font-size: 8rem;
+    }
+    #about .para{
+        font-size: 2rem;
+    }
+    #boxes{
+        margin-top: 15rem;
+    }
+    #boxes .box-1{
+        height: 35rem;
+    }
+    #boxes .box-2{
+        height: 39rem;
+    }
+    #boxes .box-same{
+        height: 36rem;
+    }
+    #boxes .box-4{
+        height: 35rem;
+    }
+    #boxes .box p{
+       font-size: 1.5rem;
+    }
+    #contact{
+        grid-template-columns: 1fr 1.2fr;
+    }
+    .contact-form{
+        margin-top: 5rem;
+        padding: 8rem 1rem;
+    }
+    #contact-details h3{
+        font-size: 3.5rem;
+    }
+    #contact-details p{
+        font-size: 1.5rem;
+        padding: 3rem;
+    }
+    .form-grp{
+        padding-left: 5rem;
+        padding-bottom: 4rem;
+    }
+    .form-grp .form-control{
+        height: 5rem;
+        width: 20rem;
+    }
+    .form-grp ::placeholder{
+        font-size: 2rem;
+    }
+    .form-grp .info{
+        width: 45rem;
+    }
+    .btn{
+        width: 15rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+    footer{
+        font-size: 2rem;
+        padding: 5rem;
+    }  
+}
+
+@media(max-width:1024px){
+    #logo img{
+        width: 3rem;
+        height: 3rem;
+    }
+    #logo h3{
+        font-size: 1.5rem;
+    }
+    #navbar ul li a{
+        padding: 3px 15px;
+        font-size: 1.1rem;
+    }
+    .mid{
+        font-size: 2rem;
+    }
+    #column .col img{
+        height: 5rem;
+        width: 5rem;
+    }
+    #column .col h3{
+        font-size: 1.3rem;
+    }
+    #boxes{
+        flex-flow: row wrap;
+        height: 100%;
+        margin-top: 7rem;
+    }
+    #boxes .box-1{
+        height: 10rem;
+        margin-top: 0rem;
+    }
+    #boxes .box-2{
+        height: 10rem;
+    }
+    #boxes .box-same{
+        height: 10rem;
+        margin-top: 0rem;
+    }
+    #boxes .box-4{
+        height: 10rem;
+        margin-top: 0rem;
+    } 
+    .form-grp .form-control{
+        width: 13rem;
+    }
+    .form-grp .info{
+        width: 29rem;
+    }
+}
+@media(max-width:768px){
+    #logo h3{
+        padding-left: 0.5rem;
+        font-size: 1.3rem;
+    }
+    #navbar ul li a{
+        padding: 3px 9px;
+        font-size: 1rem;
+    }
+    #navbar .order{
+        height: 2.7rem;
+        width: 7rem;
+    }
+    .mid{
+        margin-top: 9rem;
+        font-size:2rem; 
+    }
+    #column .col p{ 
+        font-size: 0.8rem;
+    }
+    #container .heading{
+        font-size: 7rem;
+    }
+    #container .sub-heading{
+        padding-top: 5rem;
+    }
+    #service-box{
+        flex-flow: row wrap;
+    }
+    #contact{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #contact-details p{
+        padding: 0rem 3rem;
+    }
+    #contact-box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .form-grp{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media(max-width:426px){
+    /* #navbar{
+        grid-template-columns: 0fr 0fr 0fr;
+        grid-template-areas:
+        'logo order order'
+        'list list list ';
+    }
+    #logo{
+        grid-area: logo;
+    }
+    #navbar ul{
+        grid-area: list;
+    }   
+    #navbar .order{
+        grid-area: order;
+    } */
+    #navbar{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .mid{
+        margin-top:11rem ;  
+        font-size:1.5rem; 
+    }
+    #column{
+        border-top: none;
+        margin-top: 15rem;
+        flex-flow: row wrap;
+        color: black;
+    }
+    #column .col{
+        margin-top: 4rem;
+    }
+    #service{
+        margin-top: 2rem;
+    }
+    #container{
+        margin-top: 10rem;
+    }
+    #container .heading{
+        font-size: 6rem;
+    }
+    #container .sub-heading{
+        font-size: 2.5rem;
+    }
+    #about h1{
+        margin-top: 10rem;
+        font-size: 3rem;
+    }
+    #about .para{
+        padding: 0rem 4rem;    
+    }
+    #boxes .box-1{
+        height: 15rem;
+    }
+    #boxes .box-2{
+        height: 15rem;
+    }
+    #boxes .box-same{
+        height: 15rem;
+    }
+    #boxes .box-4{
+        height: 15rem;
+    }
+    .form-grp .form-control{
+        width: 7rem;
+    }
+    .form-grp .info{
+        width: 18rem;
+    }
+    .btn{
+        height: 3rem;
+        width: 8rem;
+        font-size: 1rem;
+    }
+}
+@media(max-width:325px){
+    #navbar ul li a{
+        font-size: 0.8rem;
+    }
+    #navbar .order{
+        height: 2rem;
+        width: 6rem;
+    }
+    #container .heading{
+        font-size: 5rem;
+    }
+    #container .sub-heading{
+        font-size: 2rem;
+    }
+    #service-box .item img{
+        height: 4rem;
+        width: 4rem;
+    }
+    #service-box .item h2{
+        font-size: 1.5rem;
+    }
+    #service-box .item p{
+        padding: 0rem 1rem ;  
+    }
+    #about h1{
+        font-size:2.5rem ;
+    }
+    #about .para{
+        padding: 0rem 2rem;    
+    }
+    #contact-box .row{
+        flex-direction: column;
+    }
+    .form-grp .form-control{
+        width: 12rem;
+    }
+    .form-grp .info{
+        width: 12rem;
+    }
+}
+
